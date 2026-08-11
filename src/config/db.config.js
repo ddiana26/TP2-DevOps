@@ -1,6 +1,7 @@
 module.exports = {
   HOST: process.env.DB_HOST || 'localhost',
   USER: process.env.DB_USER || 'root',
+  PORT: process.env.DB_PORT || 3306,
   PASSWORD: process.env.DB_PASSWORD || '',
   DB: process.env.DB_NAME || 'todolist_db',
   dialect: process.env.DB_DIALECT || 'mysql',
