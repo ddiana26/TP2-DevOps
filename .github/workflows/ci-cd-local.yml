@@ -68,3 +68,20 @@ jobs:
         run: |
           sleep 5
           curl --fail http://localhost:3000
+
+      - name: Lancer le conteneur
+        run: |
+          docker run -d \
+          --name projet-backend \
+          -p 3000:3000 \
+          projet_devops_backend_image
+
+      - name: Vérifier le conteneur
+        run: |
+          docker ps -a
+          docker logs projet-backend
+
+      - name: Smoke test
+        run: |
+          sleep 5
+          curl --fail http://localhost:3000
