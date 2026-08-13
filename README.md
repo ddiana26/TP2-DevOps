@@ -8,15 +8,14 @@
 concise que vous pouvez utiliser.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-# ![left 100%](https://raw.githubusercontent.com/thierrylaval/archives/master/images/logo-portfolio.png
+# ![left 100%](https://raw.githubusercontent.com/thierry-laval/archives/master/images/logo-portfolio.png)
 
 ## Auteur
-὆**Thierry LAVAL** [἞἟ Contactez moi ἞἞](<contact@thierrylaval.dev>)
+**Thierry LAVAL** [Contactez-moi](mailto:contact@thierrylaval.dev)
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
 ***
-### Ὄ Projet 22 - Création d'un fichier README pour GitHub
-![left 100%](images/bandeau-readme.png?raw=true)
+### 📎 Projet 22 - Création d'un fichier README pour GitHub
 _`Début du projet le 10/09/2021`_
 <!-- LOGO DU PROJET -->
 <br />
@@ -26,23 +25,25 @@ _`Début du projet le 10/09/2021`_
   <p align="center">
 Un modèle de fichier génial pour lancer vos projets !
   <br />
-  <a href="https://github.com/thierry-laval/P22-template-pour-unreadme"><strong>>> Explorer les documents <<</strong></a>
+  <a href="https://github.com/thierry-laval/P22-template-pour-un-readme"><strong>>> Explorer les documents <<</strong></a>
   <br />
   <br />
-  <a href="https://github.com/thierry-laval/P22-template-pour-unreadme/blob/main/BLANK_README.md">Voir la démo</a>
+  <a href="https://github.com/thierry-laval/P22-template-pour-un-readme/blob/main/BLANK_README.md">Voir la démo</a>
   ·
-  <a href="https://github.com/thierry-laval/P22-template-pour-unreadme/pulls">Rapport de Bug</a>
+  <a href="https://github.com/thierry-laval/P22-template-pour-un-readme/pulls">Rapport de Bug</a>
   ·
-  <a href="https://github.com/thierry-laval/P22-template-pour-unreadme/issues">Demande de fonctionnalité</a>
+  <a href="https://github.com/thierry-laval/P22-template-pour-un-readme/issues">Demande de fonctionnalité</a>
   </p>
 </p>
 <div align="center">
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 </div>
 ***
 <!-- TABLE DES MATIÈRES -->
@@ -73,6 +74,7 @@ Un modèle de fichier génial pour lancer vos projets !
 <!-- A PROPOS DU PROJET -->
 
 ## A propos du projet
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 Il existe de nombreux modèles de README sur GitHub, mais je n'en ai pas trouvé
 un qui réponde vraiment à mes besoins, alors j'ai créé ce modèle amélioré.
@@ -106,15 +108,15 @@ logiciel et de la façon de les installer.
 ### Installation
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
-  ```sh
+  ```
   git clone https://github.com/your_username_/Project-Name.git
   ```
 3. Install NPM packages
-  ```sh
+  ```
   npm install
   ```
 4. Enter your API in `config.js`
-  ```JS
+  ```
   const API_KEY = 'ENTER YOUR API';
   ```
 <!-- EXEMPLES D'UTILISATION -->
@@ -128,7 +130,7 @@ _Pour plus d'exemples, veuillez vous référer à la [Documentation]
 (https://example.com)._
 <!-- FEUILLE DE ROUTE -->
 ## Feuille de route
-Voir le [open issues](https://github.com/thierry-laval/P22-template-pour-unreadme/issues) pour une liste des fonctionnalités proposées (et des problèmes
+Voir le [open issues](https://github.com/thierry-laval/P22-template-pour-un-readme/issues) pour une liste des fonctionnalités proposées (et des problèmes
 connus).
 <!-- CONTRIBUTION -->
 ## Contribuer
@@ -155,20 +157,21 @@ faites sont **grandement appréciées**.
 * [Font Awesome](https://fontawesome.com)
 <!-- MARKDOWN LIENS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/thierrylaval/P22-template-pour-un-readme.svg?label=Contributeurs&style=for-thebadge&color=blue
-[contributors-url]: https://github.com/thierry-laval/P22-template-pour-unreadme/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/thierry-laval/P22-templatepour-un-readme?style=for-the-badge
-[forks-url]: https://github.com/thierry-laval/P22-template-pour-unreadme/network/members
-[stars-shield]: https://img.shields.io/github/stars/thierry-laval/P22-templatepour-un-readme?style=for-the-badge
-[stars-url]: https://github.com/thierry-laval/P22-template-pour-unreadme/stargazers
-[issues-shield]: https://img.shields.io/github/issues/thierry-laval/P22-
-template-pour-un-readme?color=yellow&style=for-the-badge
-[issues-url]: https://github.com/thierry-laval/P22-template-pour-unreadme/issues
-[license-shield]: https://img.shields.io/badge/LICENCE-MITgreen?color=green&style=for-the-badge
-[license-url]: https://github.com/thierry-laval/P22-template-pour-unreadme/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=forthe-badge&logo=linkedin&colorB=blue
+
+[contributors-shield]: https://img.shields.io/github/contributors/thierry&laval/P22-template-pour-un-readme.svg?label=Contributeurs&style=for-the&badge&color=blue
+[contributors-url]: https://github.com/thierry-laval/P22-template-pour-un-readme/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/thierry-laval/P22-template-pour-un-readme?style=for-the-badge
+[forks-url]: https://github.com/thierry-laval/P22-template-pour-un-readme/network/members
+[stars-shield]: https://img.shields.io/github/stars/thierry-laval/P22-template-pour-un-readme?style=for-the-badge
+[stars-url]: https://github.com/thierry-laval/P22-template-pour-un-readme/stargazers
+[issues-shield]: https://img.shields.io/github/issues/thierry-laval/P22-template-pour-un-readme?color=yellowstyle=for-the-badge
+[issues-url]: https://github.com/thierry-laval/P22-template-pour-un-readme/issues
+[license-shield]: https://img.shields.io/badge/LICENCE-MIT-green?color=green&style=for-the-badge
+[license-url]: https://github.com/thierry-laval/P22-template-pour-un-readme/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
 [linkedin-url]: https://www.linkedin.com/in/thierry-laval
 [product-screenshot]: images/screenshot.png
+
 ***
 ### Utilisé dans ce projet
 | Langages | et Applications |
@@ -186,7 +189,9 @@ Copyright © 2021 [Thierry Laval](https://thierrylaval.dev)
 Si vous appréciez ce projet, vous pouvez me soutenir :
 <a href="https://paypal.me/thierrylaval01?country.x=FR&locale.x=fr_FR"
 target="_blank"><img
-src="https://www.paypalobjects.com/digitalassets/c/website/logo/fulltext/pp_fc_hl.svg" alt="Soutiens-moi !" height="35" width="150"></a>
+src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg" alt="Soutiens-moi !" height="35" width="150"></a>
+
 [Voir mon travail](https://github.com/thierry-laval)
-[Créer un bon template](https://github.com/thierry-laval/P22-template-pour-unreadme)
+[Créer un bon template](https://github.com/thierry-laval/P22-template-pour-un-readme)
+
 ***
