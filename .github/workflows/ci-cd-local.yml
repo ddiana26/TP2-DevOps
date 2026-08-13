@@ -1,16 +1,13 @@
 name: CI/CD
-
 on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
 
 jobs:
-
   tests:
     runs-on: ubuntu-latest
 
@@ -27,7 +24,6 @@ jobs:
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
-
     env:
       DB_HOST: 127.0.0.1
       DB_USER: root
@@ -50,8 +46,6 @@ jobs:
 
       - name: Tests
         run: npm test
-
-
   docker:
     needs: tests
     runs-on: ubuntu-latest
@@ -63,47 +57,20 @@ jobs:
       - name: Construction de l'image
         run: docker build -t projet_devops_backend_image .
 
-      - name: Créer le réseau Docker
-        run: docker network create projet-network
-
-      - name: Lancer MySQL
-        run: |
-          docker run -d \
-            --name projet-db \
-            --network projet-network \
-            -e MYSQL_ROOT_PASSWORD=exemple \
-            -e MYSQL_DATABASE=todolist_db \
-            mysql:5.7
-
-      - name: Attendre MySQL
-        run: |
-          for i in {1..30}; do
-            if docker exec projet-db mysqladmin ping -h localhost -pexemple --silent; then
-              echo "MySQL est prêt"
-              break
-            fi
-            echo "Attente de MySQL..."
-            sleep 2
-          done
-
       - name: Lancer le conteneur
         run: |
           docker run -d \
             --name projet-backend \
-            --network projet-network \
             -p 3000:3000 \
-            -e DB_HOST=projet-db \
-            -e DB_USER=root \
-            -e DB_PASSWORD=exemple \
-            -e DB_NAME=todolist_db \
-            -e DB_DIALECT=mysql \
-            -e DB_PORT=3306 \
-            -e PORT=3000 \
             projet_devops_backend_image
+
+      - name: Smoke test
+        run: |
+          sleep 5
+          curl --fail http://localhost:3000
 
       - name: Vérifier le conteneur
         run: |
-          sleep 5
           docker ps -a
           docker logs projet-backend
 
