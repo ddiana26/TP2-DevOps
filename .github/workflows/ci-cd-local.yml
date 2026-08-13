@@ -46,7 +46,7 @@ jobs:
 
       - name: Tests
         run: npm test
-
+        
   docker:
     needs: tests
     runs-on: ubuntu-latest
@@ -58,10 +58,30 @@ jobs:
       - name: Construction de l'image
         run: docker build -t projet_devops_backend_image .
 
+      - name: Lancer MySQL
+        run: |
+          docker run -d \
+            --name db \
+            -e MYSQL_ROOT_PASSWORD=exemple \
+            -e MYSQL_DATABASE=todolist_db \
+            -p 3306:3306 \
+            mysql:5.7
+
+      - name: Attendre MySQL
+        run: |
+          sleep 15
+
       - name: Lancer le conteneur
         run: |
           docker run -d \
             --name projet-backend \
+            --link db:db \
+            -e DB_HOST=db \
+            -e DB_USER=root \
+            -e DB_PASSWORD=exemple \
+            -e DB_NAME=todolist_db \
+            -e DB_DIALECT=mysql \
+            -e DB_PORT=3306 \
             -p 3000:3000 \
             projet_devops_backend_image
 
